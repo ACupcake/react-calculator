@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://github.com/ACupcake/react-calculator/tree/main/static/images/calculator_photo.png
+
+![Calculator print](https://github.com/ACupcake/react-calculator/tree/main/static/images/calculator_photo.png?raw=true)
 
 ## Available Scripts
 
