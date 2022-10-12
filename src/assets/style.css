@@ -1,0 +1,133 @@
+html {
+    --color-blue: rgb(100, 191, 225);
+    --color-dark-blue: rgb(95, 152, 173);
+    --color-react-blue: #7ddfff;
+    
+    --color-grey: rgb(180, 180, 180);
+    --color-dark-grey: rgb(170, 170, 170);
+    --color-darker-grey: rgb(160, 160, 160);
+
+    --color-red: rgb(178, 33, 33);
+    --color-dark-red: rgb(164, 45, 45);
+    --color-darker-red: rgb(140, 37, 37);
+
+    --color-green: rgb(57, 161, 47);
+    --color-dark-green: rgb(44, 134, 58);
+    --color-darker-green: rgb(42, 125, 55);
+
+    --color-black: rgb(0, 0, 0);
+    --color-soft-black: rgb(49, 49, 49);
+
+    --color-white: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--color-soft-black);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    color: var(--color-white);
+}
+
+.react-title {
+    color: var(--color-react-blue);
+}
+
+.calculator {
+    width: min(30vw, 90%);
+    height: min(70vh, 80%);
+    background-color: var(--color-blue);
+}
+
+.calculator-screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: var(--color-dark-blue);
+    width: 100%;
+    height: 15%;
+
+    overflow: hidden;
+}
+
+.screen-text {
+    font-family: 'Digital7';
+    font-size: 50px;
+    margin-inline: 10px;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    height: 85%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+    box-shadow: 5px 5px 0px 5px var(--color-darker-grey);
+    border-radius: 10px;
+
+    width: 70%;
+    height: 70%;
+    margin: 10px;
+    background-color: var(--color-grey);
+}
+
+.delete {
+    background-color: var(--color-red);
+    box-shadow: 5px 5px 0px 5px var(--color-darker-red);
+}
+
+.equal {
+    background-color: var(--color-green);
+    box-shadow: 5px 5px 0px 5px var(--color-darker-green);
+}
+
+.hole {
+    overflow: hidden;
+    background-color: --var(--color-black);
+}
+
+
+/* Transition */
+.button:active {
+    background-color: var(--color-dark-grey);
+}
+
+.delete:active {
+    background-color: var(--color-dark-red);
+}
+
+.equal:active {
+    background-color: var(--color-dark-green);
+}
+
+/* Media query */
+
+@media (max-width: 700px) {
+    .calculator {
+        width: 90vw;
+        height: min(90vh, 550px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .calculator {
+        width: min(90vw, 500px);
+        height: min(90vh, 550px);
+    }
+}
