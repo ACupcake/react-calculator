@@ -2,7 +2,7 @@
 
 https://github.com/ACupcake/react-calculator/tree/main/static/images/calculator_photo.png
 
-![Calculator print](https://github.com/ACupcake/react-calculator/tree/main/static/images/calculator_photo.png?raw=true)
+![Calculator print](https://raw.githubusercontent.com/ACupcake/react-calculator/main/static/images/calculator_photo.png)
 
 ## Available Scripts
 
